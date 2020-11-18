@@ -5,6 +5,15 @@
 	box-sizing: border-box;
 	font-family: 'MuseoSansCyrl', sans-serif;
 }
+
+h3 {
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	color: #0d0d0d;
+	text-transform: uppercase;
+	margin: 0;
+}
 	
 .container {
 	max-width: 950;
@@ -13,7 +22,9 @@
 
 @import 'blocks/promo';
 @import 'blocks/header';
-@import 'blocks/buttons'
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+
 
 
 	
