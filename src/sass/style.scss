@@ -16,9 +16,27 @@ h3 {
 }
 	
 .container {
-	max-width: 950;
+	max-width: 950px;
 	margin: 0 auto;
 }
+
+@media (max-width: 950px) {
+	.container {
+		padding: 0 40px;
+	}
+}
+@media (max-width: 768px) {
+	h3 {
+		font-size: 27px;
+	}
+}
+
+@media (max-width: 446px) {
+	h3 {
+		font-size: 22px;
+	}
+}
+
 
 @import 'blocks/promo';
 @import 'blocks/header';

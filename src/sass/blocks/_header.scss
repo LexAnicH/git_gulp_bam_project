@@ -42,3 +42,58 @@
     }    
 }
 
+@media (max-width: 700px) {
+    .header {
+		&__logo {
+            width: 200px;
+        }
+        &__official {
+            font-size: 11px;
+            span {
+                font-size: 15px;
+            }
+        }
+        &__phone {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 578px) {
+    .header {
+
+        &__official {
+            display: none;
+        }
+        &__contacts {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }    
+        &__phone {
+                margin-right: 17px;
+            }
+        
+
+    }        
+    
+}
+@media (max-width: 559px) {
+    .header {
+        &__phone {
+            display: none;
+        }
+    }        
+
+}
+@media (max-width: 559px) {
+    .header {
+        &__logo {
+            margin: 0 auto;
+            width: 250px;
+        }
+        
+    }
+}
+
+
