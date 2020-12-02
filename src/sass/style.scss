@@ -6,14 +6,6 @@
 	font-family: 'MuseoSansCyrl', sans-serif;
 }
 
-h3 {
-	font-size: 30px;
-	font-weight: 700;
-	text-align: center;
-	color: #0d0d0d;
-	text-transform: uppercase;
-	margin: 0;
-}
 	
 .container {
 	max-width: 950px;
@@ -25,23 +17,17 @@ h3 {
 		padding: 0 40px;
 	}
 }
-@media (max-width: 768px) {
-	h3 {
-		font-size: 27px;
-	}
-}
 
-@media (max-width: 446px) {
-	h3 {
-		font-size: 22px;
-	}
-}
 
 
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/advantages';
+@import 'blocks/consultation';
+@import 'blocks/title';
+@import 'blocks/forms';
+
 
 
 
