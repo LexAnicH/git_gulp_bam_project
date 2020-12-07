@@ -1,0 +1,60 @@
+.carusel {
+    position: relative;
+    padding: 150px 0 170px 0;
+    &__items {
+        width: 750px;
+    }
+
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 750px;
+        }
+    }
+
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -55px;
+        border: none;
+        background-color: #fff;
+    }
+    .next {
+        right: -55px;
+        left: auto;
+    }
+    .tns-nav {
+        display: flex;
+        justify-content: center;
+        button {
+            margin: 0 3px;
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .tns-nav-active {
+        background-color: $main-color;
+        border: none;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .carusel {
+        padding-top: 13vw;
+        padding-bottom: 13vw;
+        .tns-item {
+            img {
+                width: 85vw;
+            }
+        }
+        .prev,
+        .next {
+            display: none;
+        }
+    }    
+    
+}

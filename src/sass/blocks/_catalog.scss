@@ -1,0 +1,174 @@
+.catalog {
+    padding-bottom: 103px;
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 70px 0 60px 0;
+    }
+    &__tab {
+        width: 220px;
+        height: 50px;
+        border: 2px solid #d0d0d0;
+        margin: 0 5px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 49px;
+        text-align: center;
+        color: #6b6b6b;
+        text-transform: uppercase;
+        transform: skewX(-20deg);
+        cursor: pointer;
+        div {
+            display: block;
+            transform: skewX(20deg);
+        }
+        &_active {
+            background-color: $main-color;
+            color: #fff;
+            border: none;
+        }
+        &:hover {
+            box-shadow: 2px 2px 15px $main-color;
+        }
+    }
+
+    &__content {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        display: none;
+        &_active {
+            display: flex;
+        }
+    }
+
+    &-item {
+        width: 300px;
+        min-height: 440px;
+        padding: 20px 19px 26px 20px;
+        border: solid 2px #e8e8e8;
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        &__wrapper {
+            position: relative;
+            width: calc(200% + 40px);
+            display: flex;
+            transform: translateX(calc(-50% - 20px));
+            transition: 0.4s all linear;
+            &_active {
+                transform: translateX(0%);
+            }
+        }
+
+        &__main {
+            display: block;
+            width: 50%;
+            margin-right: 20px;
+        }
+
+        &__list {
+            position: relative;
+            padding-left: 20px;
+            margin-left: 20px;
+            display: block;
+            width: 50%;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: left;
+            color: #555555;
+            list-style-type: none;
+
+            li {
+                position: relative;
+                margin-bottom: 15px;
+                &:before {
+                    content: "";
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main-color;
+                    position: absolute;
+                    left: -14px;
+                    top: 8px;
+                }
+            }
+        }
+
+        &__img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: 200px;
+        }
+
+        &__subtitle {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            color: #0d0d0d;
+        }
+
+        &__descr {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: normal;
+            text-align: center;
+            color: #0d0d0d;
+            margin-top: 16px;
+        }
+        &__link {
+            display: block;
+            margin: 17px auto 0 auto;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            color: $main-color;
+            text-transform: uppercase;
+            text-decoration: underline;
+            &_back {
+                position: absolute;
+                bottom: 0;
+                right: 20%;
+                display: block;
+                margin: 17px auto 0 auto;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: center;
+                color: $main-color;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+        }
+        hr {
+            border-bottom: none;
+            background-color: #e8e8e8;
+            margin: 20px 0;
+        }
+
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        &__prices {
+        }
+
+        &__price-old {
+            font-size: 14px;
+            font-weight: 300;
+            text-align: left;
+            color: #555555;
+            text-decoration: line-through;
+        }
+
+        &__price {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: left;
+            color: #050505;
+        }
+    }
+}
