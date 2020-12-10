@@ -1,0 +1,46 @@
+.review {
+    &__block {
+        display: flex;
+        width: 100%;
+        min-height: 169px;
+        margin-bottom: 100px;
+        &:last-child {
+            margin-bottom: 70px;
+        }
+    }
+    &__circ {
+        width: 169px;
+        height: 169px;
+        border-radius: 50%;
+        margin-right: 5vw;
+    }
+    img {
+        height: 100%;
+    }
+    &__comment {
+        width: 650px;
+        text-align: left;
+        color: #0d0d0d;
+
+        &-name {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1;
+
+        }
+        &-info {
+            font-size: 14px;
+            font-weight: 300;
+            color: #646464;
+            margin-top: 10px;
+            line-height: 1;
+
+        }
+        &-text {
+            font-size: 16px;
+            margin-top: 19px;
+            line-height: normal;
+
+        }
+    }
+}
